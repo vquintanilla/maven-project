@@ -13,7 +13,7 @@ pipeline {
             steps{
                 //bat 'mvn clean package'
                 //bat "docker build . -t tomcatwebapp:${env.BUILD_ID}"
-                bat "echo ${my_tag}"
+                sh "echo ${my_tag}"
             }
 
         }
