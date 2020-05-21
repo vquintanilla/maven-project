@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Run'){
             steps{
-                sh "docker run -p 8282:8080 tomcatwebapp:${env.BUILD_ID}"
+                sh "docker run -p 8282:8080 tomcatwebapp:${env.BUILD_ID} &"
             }
 
         }
